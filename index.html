@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- style is use for styling a website -->
+    <style>
+
+        :root {
+            --fontFamily: sans-serif;
+            --fontSize: 16px;
+        }
+
+        span {
+            color: yellow;
+        }
+        body {
+            background-color: gainsboro;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 0 5rem;
+        }
+        ul {
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            font-weight: 700;
+            color: blue;
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+        .navigation-btn {
+            color: white;
+            font-weight: 700;
+            border: none;
+            background-color: red;
+        }
+
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(./public/images/386893149_6806417122805049_8526782425273162248_n.jpg);
+            height: 95vh;
+            background-size: cover;
+         
+        }
+        .hero-content-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, .7);
+            width: 100%;
+            height: 100%;
+        }
+        .hero-title {
+            color: white;
+            font-family: sans-serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .hero-tagLine {
+            color: white;
+            font-family: var(--fontFamily);
+            font-size: var(--fontSize);
+        }
+        button {
+            background-color: transparent;
+            border: 1px solid white;
+            padding: .5rem;
+            border-radius: 5px;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .hero-img {
+            width: 5rem;
+        }
+
+        .hero-img-bg {
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 50%;
+        }
+
+        .main-missionVision-coaintner {
+            display: flex;
+            font-family: var(--fontFamily);
+            text-align: center;
+            align-items: center;
+            margin: 0 20vw;
+            height: 20rem;
+        }
+        .main-mission-container, .main-vision-container {
+            width: 50%;
+            padding: 0 1rem;
+        }
+        .missionVision-title {
+            text-transform: uppercase;
+        }
+        .mission {
+            color: blue;
+        }
+        .vision {
+            color: red;
+        }
+
+        .main-courses-container {
+            display: flex;
+            width: 100vw;
+            height: 20rem;
+            align-items: center;
+            background-image: url(./public/images/386893149_6806417122805049_8526782425273162248_n.jpg);
+            color: white;
+            background-size: cover;
+            background-position: center;
+            font-family: var(--fontFamily);
+        }
+        .courses-list-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, .9);
+            font-size: 15px;
+        }
+        .courses-list {
+            flex-direction: column;
+            justify-content: center;
+            font-size: var(--fontSize);
+            width: 50%;
+        }
+        .courses-title {
+            display: flex;
+            background-color: blue;
+            font-family: sans-serif;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            width: 60rem;
+            height: 100%;
+        }
+        footer {
+            background-image: url(./public/images/386893149_6806417122805049_8526782425273162248_n.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 15rem;
+        }
+        .footer-contacts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .8);
+        }
+        .socials {
+            width: 20rem;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullbright College</title>
+</head>
+<body>
+
+    <!-- header is where you put the navigation eg. home about contacts. like listing the key points. -->
+    <header>
+        <nav>
+            <!-- div is a division -->
+            <div class="logo-container">
+                <img class="hero-img" src="./public/images/1630574717373.jfif">
+            </div>
+            <!-- ul is a unlist item -->
+            <ul>
+                <!-- li is a list item -->
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#courses">courses</a></li>
+                <li><a href="#contacts">contacts</a></li>
+            </ul>
+            <button class="navigation-btn">apply</button>
+        </nav>
+    </header>
+
+    <!-- div element is division or container of an group of element -->
+    <div  id="home" class="main-container">
+
+        <div class="hero-section">
+            
+            <div class="hero-content-container">
+                <h1 class="hero-title">welcome to <br><span>fullbright college</span></h1>
+                <p class="hero-tagLine">hyper linking you to a BRIGHTER FUTURE</p>
+                <button>enroll now</button>
+            </div>
+    
+        </div>
+
+        <div id="about" class="main-missionVision-coaintner">
+
+            <div class="main-mission-container">
+                <h1 class="missionVision-title mission">mission</h1>
+                <p>fullbright College offers quality and affordable education for students from different <wbr>municipalities in Palawan <wbr>who aim for academic success, personal fulfillment and preparation for job opportunities of today and tommorow.</p>
+            </div>
+            <div class="main-vision-container">
+                <h1 class="missionVision-title vision">vision</h1>
+                <p>Fullbright College is the first choice of students for private higher education in Palawan <wbr>where graduates are enriching communities at home and abroad.</p>
+            </div>
+
+        </div>
+
+        <div id="courses" class="main-courses-container">
+
+            <div class="courses-title">
+                <h1>Degrer <br>courses <br>offered</h1>
+            </div>
+            <div class="courses-list-container">
+                <ul class="courses-list">
+                    <li>BS in <span>Crimonology</span></li>
+                    <li>BS in <span>Elementary Education</span></li>
+                    <li>BS in <span>Secondary Education</span></li>
+                    <li>BS in <span>Electronic Engineering</span></li>
+                    <li>BS in <span>Computer Engineering</span></li>
+                    <li>BS in <span>Computer Science</span></li>
+                    <li>BS in <span>Information Technology</span></li>
+                    <li>BS in <span>Hotel Restaurant Management</span></li>
+                    <li>BS in <span>Tourism Management</span></li>
+                    <li>BS in <span>Business Administration</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer id="contacts">
+        <div class="footer-contacts">
+            <img class="socials" src="./public/images/social icon.png">
+        </div>
+    </footer>
+
+</body>
+</html>
